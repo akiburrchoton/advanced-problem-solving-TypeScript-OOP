@@ -14,6 +14,7 @@ id: string | number;
 
 // This function works for Users, Products, or Orders,
 // as long as they have an 'id' property.
+
 function getRecordId<T extends Identifiable>(record: T): T["id"] {
 return record.id;
 }
